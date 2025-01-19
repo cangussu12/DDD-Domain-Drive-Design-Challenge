@@ -1,3 +1,57 @@
+# ------------------// entities //------------------
+
+# purchase order
+
+- purchase id
+- product_purchased
+- amount.
+- supplier id
+- status_order.
+- estimated_delivery_date.
+
+# supplier:
+
+- id supplier
+- name.
+- phone.
+- email.
+- address.
+- products_available.
+- delivery_time
+- movement_history.
+
+# Product:
+
+- id product.
+- name.
+- stock_quantity.
+- suplier id.
+- minimum_quantity_available.
+- size (optional).
+- color (optional).
+- movement_history.
+
+# stock:
+
+- product_list.
+- total_quantity_product.
+- low_stock_alert. (boolean)
+
+# sale:
+
+- products_sold.
+- quantity_sold.
+- profit_product
+- date/hour.
+- price.
+
+# Alert:
+
+- Produto relacionado.
+- Status de quantidade crítica (abaixo do mínimo).
+
+# ------------------// use-cases //------------------
+
 # Manage products in stock:
 
 [x] Add new products with unique attributes (e.g., ID, size, color).  
